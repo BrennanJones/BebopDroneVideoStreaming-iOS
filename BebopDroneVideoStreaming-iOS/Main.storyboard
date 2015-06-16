@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xr6-JS-Auf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZoE-fT-OVR">
+            <objects>
+                <navigationController id="Xr6-JS-Auf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6d6-PJ-1cf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fcT-VR-afJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CA5-ti-1Uu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BebopDroneVideoStreaming-iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owH-rI-Zfi">
+                                <rect key="frame" x="174" y="69" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZXe-tC-FJv"/>
+                                    <constraint firstAttribute="height" constant="30" id="qty-hV-d4p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mPd-Gx-pY3">
+                                <rect key="frame" x="0.0" y="114" width="600" height="481"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RoG-M5-17o"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="GFQ-Ke-HMg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="owH-rI-Zfi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="7SI-qd-Xh5"/>
+                            <constraint firstAttribute="centerX" secondItem="owH-rI-Zfi" secondAttribute="centerX" id="7xw-lL-s0t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mPd-Gx-pY3" secondAttribute="bottom" constant="5" id="BYz-Wz-y0y"/>
+                            <constraint firstAttribute="width" secondItem="mPd-Gx-pY3" secondAttribute="width" id="KLV-WG-369"/>
+                            <constraint firstAttribute="centerX" secondItem="mPd-Gx-pY3" secondAttribute="centerX" id="QiX-ii-qjB"/>
+                            <constraint firstItem="mPd-Gx-pY3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="jLK-q1-qL0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jHq-eX-Z9B"/>
+                    <connections>
+                        <outlet property="tableView" destination="mPd-Gx-pY3" id="YN0-3h-vu0"/>
+                        <segue destination="h7l-W5-mPq" kind="show" identifier="pilotingSegue" id="WgT-VY-ud4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-117" y="-125"/>
+        </scene>
+        <!--pilotingViewController-->
+        <scene sceneID="fUJ-q7-0No">
+            <objects>
+                <viewController id="h7l-W5-mPq" userLabel="pilotingViewController" customClass="PilotingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nbi-7z-JqM"/>
+                        <viewControllerLayoutGuide type="bottom" id="IrK-7n-FPb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f1G-oB-rrQ" userLabel="Piloting View Controller">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAO-Pt-xAW" customClass="DroneVideoView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wAO-Pt-xAW" firstAttribute="height" secondItem="f1G-oB-rrQ" secondAttribute="height" id="56p-h9-7an"/>
+                            <constraint firstItem="wAO-Pt-xAW" firstAttribute="width" secondItem="f1G-oB-rrQ" secondAttribute="width" id="IsO-L1-0LT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qnr-jj-IJc"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="droneVideoView" destination="wAO-Pt-xAW" id="E8D-jV-6bD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sha-9N-qNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="-136"/>
+        </scene>
+    </scenes>
+</document>
