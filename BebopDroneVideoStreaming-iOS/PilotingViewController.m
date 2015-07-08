@@ -59,8 +59,6 @@
     
     _alertView = [[UIAlertView alloc] initWithTitle:[_service name] message:@"Connecting ..."
                                            delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
-    
-    [_droneVideoView setupVideoView];
 }
 
 - (void) viewDidAppear:(BOOL)animated

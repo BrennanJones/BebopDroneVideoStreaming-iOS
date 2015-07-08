@@ -1,9 +1,6 @@
 //
 //  DroneVideoView.m
-//  BebopDronePiloting
-//
-//  Created by Brennan Jones on 2015-04-02.
-//  Copyright (c) 2015 Parrot. All rights reserved.
+//  DVC-MobileClient-iOS
 //
 
 #import <VideoToolbox/VTDecompressionSession.h>
@@ -62,9 +59,7 @@ static const NSString * naluTypesStrings[] = {
 
 @implementation DroneVideoView
 
-
--(void) setupVideoView
-{
+- (void)commonInit {
     _searchForSPSAndPPS = true;
     
     [self setNeedsLayout];
@@ -86,6 +81,22 @@ static const NSString * naluTypesStrings[] = {
     
     // Connecting the videolayer with the view
     [[self layer] addSublayer:_videoLayer];
+}
+
+
+-(id) initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) [self commonInit];
+    return self;
+}
+
+-(id) initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+    }
+    return self;
 }
 
 -(void) updateVideoViewWithFrame:(uint8_t *)frame frameSize:(uint32_t)frameSize

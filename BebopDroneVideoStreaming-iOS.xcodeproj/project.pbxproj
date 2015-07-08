@@ -17,12 +17,12 @@
 		9689A3771B2F977200CB9026 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9689A36E1B2F977200CB9026 /* ViewController.m */; };
 		9689A3911B2F9F6900CB9026 /* libARSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A3901B2F9F6900CB9026 /* libARSAL.framework */; };
 		9689A3971B2F9F8400CB9026 /* libARCommands.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A3921B2F9F8400CB9026 /* libARCommands.framework */; };
-		9689A3981B2F9F8400CB9026 /* libARDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A3931B2F9F8400CB9026 /* libARDiscovery.framework */; };
 		9689A3991B2F9F8400CB9026 /* libARNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A3941B2F9F8400CB9026 /* libARNetwork.framework */; };
 		9689A39A1B2F9F8400CB9026 /* libARNetworkAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A3951B2F9F8400CB9026 /* libARNetworkAL.framework */; };
 		9689A39B1B2F9F8400CB9026 /* libARUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A3961B2F9F8400CB9026 /* libARUtils.framework */; };
 		9689A39D1B2F9FBD00CB9026 /* libARStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689A39C1B2F9FBD00CB9026 /* libARStream.framework */; };
 		9689A3D01B2FB40B00CB9026 /* DroneVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9689A3CF1B2FB40B00CB9026 /* DroneVideoView.m */; };
+		E9C588611B4DD0060024338D /* libARDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C588601B4DD0060024338D /* libARDiscovery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,13 +42,13 @@
 		9689A36E1B2F977200CB9026 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9689A3901B2F9F6900CB9026 /* libARSAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARSAL.framework; path = "ARDroneSDK3-Frameworks/libARSAL.framework"; sourceTree = "<group>"; };
 		9689A3921B2F9F8400CB9026 /* libARCommands.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARCommands.framework; path = "ARDroneSDK3-Frameworks/libARCommands.framework"; sourceTree = "<group>"; };
-		9689A3931B2F9F8400CB9026 /* libARDiscovery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARDiscovery.framework; path = "ARDroneSDK3-Frameworks/libARDiscovery.framework"; sourceTree = "<group>"; };
 		9689A3941B2F9F8400CB9026 /* libARNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARNetwork.framework; path = "ARDroneSDK3-Frameworks/libARNetwork.framework"; sourceTree = "<group>"; };
 		9689A3951B2F9F8400CB9026 /* libARNetworkAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARNetworkAL.framework; path = "ARDroneSDK3-Frameworks/libARNetworkAL.framework"; sourceTree = "<group>"; };
 		9689A3961B2F9F8400CB9026 /* libARUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARUtils.framework; path = "ARDroneSDK3-Frameworks/libARUtils.framework"; sourceTree = "<group>"; };
 		9689A39C1B2F9FBD00CB9026 /* libARStream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARStream.framework; path = "ARDroneSDK3-Frameworks/libARStream.framework"; sourceTree = "<group>"; };
 		9689A3CE1B2FB40B00CB9026 /* DroneVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DroneVideoView.h; sourceTree = "<group>"; };
 		9689A3CF1B2FB40B00CB9026 /* DroneVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroneVideoView.m; sourceTree = "<group>"; };
+		E9C588601B4DD0060024338D /* libARDiscovery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libARDiscovery.framework; path = "ARDroneSDK3-Frameworks/libARDiscovery.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				9689A3991B2F9F8400CB9026 /* libARNetwork.framework in Frameworks */,
 				9689A3911B2F9F6900CB9026 /* libARSAL.framework in Frameworks */,
 				9689A39A1B2F9F8400CB9026 /* libARNetworkAL.framework in Frameworks */,
-				9689A3981B2F9F8400CB9026 /* libARDiscovery.framework in Frameworks */,
+				E9C588611B4DD0060024338D /* libARDiscovery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +89,8 @@
 		1D9DF26B1A6D62CB000941ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9C588601B4DD0060024338D /* libARDiscovery.framework */,
 				9689A3921B2F9F8400CB9026 /* libARCommands.framework */,
-				9689A3931B2F9F8400CB9026 /* libARDiscovery.framework */,
 				9689A3941B2F9F8400CB9026 /* libARNetwork.framework */,
 				9689A3951B2F9F8400CB9026 /* libARNetworkAL.framework */,
 				9689A3901B2F9F6900CB9026 /* libARSAL.framework */,
@@ -291,6 +291,7 @@
 					"$(PROJECT_DIR)/ARDroneSDK3-Frameworks",
 					"$(SRCROOT)/../../../../ARSDKBuildUtils/Targets/iOS/Install/Frameworks",
 					/Users/bdgjones/Projects/ARDroneSDK3/ARSDKBuildUtils/Targets/iOS/Install/Frameworks,
+					/Users/iLab/Projects/ARDroneSDK3/ARSDKBuildUtils/Targets/iOS/Install/Frameworks,
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/BebopDroneVideoStreaming-iOS/Info.plist";
@@ -314,6 +315,7 @@
 					"$(PROJECT_DIR)/ARDroneSDK3-Frameworks",
 					"$(SRCROOT)/../../../../ARSDKBuildUtils/Targets/iOS/Install/Frameworks",
 					/Users/bdgjones/Projects/ARDroneSDK3/ARSDKBuildUtils/Targets/iOS/Install/Frameworks,
+					/Users/iLab/Projects/ARDroneSDK3/ARSDKBuildUtils/Targets/iOS/Install/Frameworks,
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/BebopDroneVideoStreaming-iOS/Info.plist";
