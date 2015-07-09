@@ -1,6 +1,6 @@
 //
 //  DroneVideoView.h
-//  DVC-MobileClient-iOS
+//  BebopDroneVideoStreaming-iOS
 //
 
 #import <UIKit/UIKit.h>
