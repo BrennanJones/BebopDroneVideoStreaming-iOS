@@ -1,6 +1,6 @@
 //
 //  DroneVideoView.m
-//  DVC-MobileClient-iOS
+//  BebopDroneVideoStreaming-iOS
 //
 
 #import <VideoToolbox/VTDecompressionSession.h>
